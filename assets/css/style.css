@@ -1,4 +1,42 @@
+h1{
+    text-align: center
+}
+
 img{
     width: 250px;
     height: 250px;
+}
+
+
+#wins{ 
+    margin-left:-15px;
+    margin-right:19px;
+    background-color:blue;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#losses{
+    margin-left:-15px;
+    margin-right:19px;
+    background-color:lightgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+#computer {
+    margin-left:-15px;
+    margin-right:19px;
+    background-color:orange;
+    padding: 10px;
+    text-align: center;
+}
+
+#sum {
+    margin-left: -28px;
+    margin-right: 35px;
+    background-color:red;
+    padding: 10px;
+    text-align: center;
 }

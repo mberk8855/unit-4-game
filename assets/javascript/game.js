@@ -1,8 +1,10 @@
 var ComputerNumber = Math.floor(Math.random() * 100) + 20;
 console.log("computer: ", ComputerNumber)
+
 //create a start button 
 
 $("#computer").text("Computer: " + ComputerNumber)
+
 //random numbers for crystals 
 
 
@@ -22,8 +24,9 @@ var lossesNumber = 0;
 $("#wins").text("Wins: " + winsNumber)
 
 $("#losses").text("Losses: " + lossesNumber)
+
 var sum = 0;
-$("#sum").text("Sum: " + sum)
+$("#sum").text("Your Total Score: " + sum)
 
 
 
@@ -39,7 +42,7 @@ $(".crystal").on("click", function (event) {
     console.log("value: ", value)
 
     sum = sum + value;
-    $("#sum").text("Sum: " + sum)
+    $("#sum").text("Your Total Score: " + sum)
 
     if (sum > ComputerNumber) {
         lossesNumber++
@@ -55,8 +58,11 @@ $(".crystal").on("click", function (event) {
 
 })
 
+//
 function restart(){
-    ComputerNumber = Math.floor(Math.random() * 100) + 20;
+    
+    // ComputerNumber = Math.floor(Math.random() * 100) + 20;
+    ComputerNumber = Math.random() * (120-19) + 19;
     console.log("computer: ", ComputerNumber)
     //create a start button 
     
@@ -76,7 +82,7 @@ function restart(){
     
  
     sum = 0;
-    $("#sum").text("Sum: " + sum)
+    $("#sum").text("Your Total Score: " + sum)
     
 
 }
@@ -84,10 +90,11 @@ function restart(){
 
 
 
-//create a start button
+//create a start button. begin 
 //clean up code 
 //send a message after loss and restart (do you want to play again?)
 //when on click of button then code to restart 
 //message saying you lost you win do you want to play again? 
 
 //then work on style 
+//reveal crystal value? 
